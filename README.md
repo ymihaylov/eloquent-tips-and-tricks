@@ -1,2 +1,2 @@
 # Advanced Eloquent - Tips and tricks
-Presentation and examples of eloquent
+Presentation and examples of eloquent talk
