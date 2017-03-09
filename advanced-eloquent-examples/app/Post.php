@@ -10,6 +10,8 @@ class Post extends Model
         'title', 'text', 'is_published',
     ];
 
+    protected $dates = [];
+    public $timestamps = false;
     public function scopePublished($query)
     {
         return $this->where('is_published', true);

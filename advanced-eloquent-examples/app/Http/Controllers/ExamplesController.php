@@ -23,7 +23,7 @@ class ExamplesController extends Controller
 
     public function queryScope()
     {
-        $posts = Post::whereMonth('published_at', 3)->get();
-        dump($posts);
+        $post = Post::find(1);
+        $post->increment('views');
     }
 }
