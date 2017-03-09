@@ -45,8 +45,8 @@
 						<ul>
 							<li>Software Developer at <a href="siteground.com">Siteground</a> <br />(We're hiring - <a href="http://jobs.siteground.bg/">jobs.siteground.bg</a>)</li>
 							<li>Self-Employed Laravel Developer</li>
-							<li>Admin at <a href="https://www.facebook.com/groups/1572445366334501/">Laravel Bulgaria</a> Group</li>
-							<li>Meme Generator at <a href="https://www.facebook.com/dnevnaDozaKlasicheskiProgramist/?fref=ts">Дневна доза "Класически програмист"</a></li>
+							<li>Gaffer (Чорбаджия) at <a href="https://www.facebook.com/groups/1572445366334501/">Laravel Bulgaria</a> Group</li>
+							<li>Meme Generator at <a href="https://www.facebook.com/dnevnaDozaKlasicheskiProgramist/?fref=ts">Дневна доза "КласиAески програмист"</a></li>
 						</ul>
 					</section>
 				</section>
@@ -59,6 +59,9 @@
 						<li>Mutators</li>
 						<li>Query Scopes</li>
 						<li>Expressive Where Syntax</li>
+						<li>Increment and decrement value in the table</li>
+						<li>Retrive random row/rows</li>
+						<li>Ordered relationships</li>
 					</ul>
 				</section>
 
@@ -183,7 +186,7 @@
 				<!-- Mutators -->
 				<section>
 					<h2>Mutators</h2>
-					We are using the when we want to change the value of attribute before to save or update the entity.
+					We are using them when we want to change the value of attribute before create or update the entity.
 
 					<pre><code class="hljs" data-trim contenteditable>
 					class User extends Model
@@ -203,9 +206,9 @@
 				<section>
 					<section>
 						<h2>Query Scopes</h2>
-						<p>Let's we have a Post model with is_published attribute and we want to only published posts. The standart way to do it is this:</p>
+						<p>Let's we have a Post model with is_published attribute and we want to get only published posts. The standart way to do it is this:</p>
 						<pre><code class="hljs" data-trim contenteditable>
-						$posts = Post::where('is_published', true)->get();
+						$posts = Post::where('is_published', '=', true)->get();
 
 						dump($posts);
 						</code></pre>
@@ -220,7 +223,7 @@
 						    // -----
 						    public function scopePublished($query)
 						    {
-						        return $this->where('is_published', true);
+						        return $query->where('is_published', true);
 						    }
 						    // -----
 						}
@@ -245,6 +248,10 @@
 
 					// Can be replaced with this
 					$posts = Post::whereIsPublished(true)->get();
+
+					// -----
+					$posts = Post::whereNotNull('user_id')->get();
+					$posts = Post::whereCategory(3)->get();
 					</code></pre>
 
 					<p>Even More ...</p>
@@ -306,6 +313,11 @@
 					    // -----
 					}
 					</code></pre>
+				</section>
+
+				<!-- Questions -->
+				<section>
+					<h1>Questions?</h1>
 				</section>
 
 				<!-- Our Sponsors -->
