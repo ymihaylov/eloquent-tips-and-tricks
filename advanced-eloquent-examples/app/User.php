@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -15,8 +16,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'first_name', 'last_name', 'email', 'password',
     ];
+
+    protected $dates = [
+        'created_at', 'updated_at', 'birthdate',
+    ];
+
+    protected $appends = ['name', 'age'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -26,4 +33,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function getNameAttribute()
+    {
+        return $this->first_name.' '.$this->last_name;
+    }
+
+    public function getAgeAttribute()
+    {
+        return $this->birthdate->age;
+    }
+
+    public function setFirstNameAttribute($firstName)
+    {
+        $this->attributes['first_name'] = ucfirst(strtolower($firstName));
+    }
 }

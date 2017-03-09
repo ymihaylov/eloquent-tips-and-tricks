@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => '/examples'], function() {
     Route::get('/', 'ExamplesController@index');
+    Route::get('/accessors', 'ExamplesController@accessors');
+    Route::get('/query-scope', 'ExamplesController@queryScope');
 });
