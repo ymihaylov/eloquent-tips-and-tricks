@@ -22,3 +22,5 @@ Presentation and examples of eloquent tips and tricks talk
 - Events (Observers)
 https://laracasts.com/series/advanced-eloquent
 - Testing Eloquent
+- Latest relationship
+http://laraveldaily.com/eloquent-get-latest-row-relationship/
