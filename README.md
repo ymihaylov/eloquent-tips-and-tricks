@@ -25,3 +25,4 @@ https://laracasts.com/series/advanced-eloquent
 - Latest relationship
 http://laraveldaily.com/eloquent-get-latest-row-relationship/
 - Collections When Method - https://laravel-news.com/laravel-collections-when-method
+- Bootle model trait - https://blog.tighten.co/laravel-tip-bootable-model-traits
