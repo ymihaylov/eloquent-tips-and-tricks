@@ -27,3 +27,4 @@ http://laraveldaily.com/eloquent-get-latest-row-relationship/
 - Collections When Method - https://laravel-news.com/laravel-collections-when-method
 - Bootle model trait - https://blog.tighten.co/laravel-tip-bootable-model-traits
 - Eager Loading https://laravel-news.com/eloquent-eager-loading?utm_content=buffer39235&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+- https://tighten.co/blog/extending-models-in-eloquent
