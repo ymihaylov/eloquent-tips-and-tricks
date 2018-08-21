@@ -29,3 +29,4 @@ http://laraveldaily.com/eloquent-get-latest-row-relationship/
 - Eager Loading https://laravel-news.com/eloquent-eager-loading?utm_content=buffer39235&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 - https://tighten.co/blog/extending-models-in-eloquent
 - https://medium.com/@codebyjeff/custom-pivot-table-models-or-choosing-the-right-technique-in-laravel-fe435ce4e27e
+- https://laravel-news.com/eloquent-tips-tricks
