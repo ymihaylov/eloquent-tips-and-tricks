@@ -30,3 +30,4 @@ http://laraveldaily.com/eloquent-get-latest-row-relationship/
 - https://tighten.co/blog/extending-models-in-eloquent
 - https://medium.com/@codebyjeff/custom-pivot-table-models-or-choosing-the-right-technique-in-laravel-fe435ce4e27e
 - https://laravel-news.com/eloquent-tips-tricks
+- https://medium.com/@JinoAntony/10-hidden-laravel-eloquent-features-you-may-not-know-efc8ccc58d9e
